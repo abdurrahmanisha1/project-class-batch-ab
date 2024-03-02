@@ -26,6 +26,7 @@ header {
 
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
 }
 
 header .logo {
@@ -87,7 +88,8 @@ header .auth button {
     background-position: center;
     color: #fff;
 }
-.banner .content{
+
+.banner .content {
     width: 70%;
 }
 
@@ -107,7 +109,8 @@ header .auth button {
     text-transform: uppercase;
     color: var(--primary-color);
 }
-.banner .bg-shadow h2 span{
+
+.banner .bg-shadow h2 span {
     color: white;
 }
 
@@ -138,4 +141,127 @@ header .auth button {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 1300px) {
+    header nav ul li a {
+        /* background: red; */
+        padding: 10px 5px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner .bg-shadow h1 {
+        font-size: 80px;
+    }
+
+    .banner .bg-shadow h2 {
+        font-size: 50px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .banner .bg-shadow h1 {
+        font-size: 70px;
+    }
+
+    .banner .bg-shadow h2 {
+        font-size: 40px;
+    }
+
+    .banner .bg-shadow p {
+        font-size: 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
+
 /* Banner section end  */
+
+
+/* section team */
+.section {
+    height: 90vh;
+    background: #08001E;
+    color: white;
+    padding-top: 60px;
+}
+
+.section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .row .col-lg-3 {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.section .row .col-lg-3 .andro_artist {}
+
+.section .row .col-lg-3 .andro_artist img {
+    border-radius: 50%;
+}
+
+
+.section .row .col-lg-3 .andro_artist-body {
+    background: #150D29;
+    padding: 20px;
+}
+
+.section .row .col-lg-3 .andro_artist-body span {
+    color: #BBBBBB;
+}
+
+.section .row .col-lg-3 .andro_artist-body h5 {
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.section .row .col-lg-3 .andro_artist-body h5 a {
+    color: white;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul {
+    padding-top: 20px;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li {
+    display: inline-block;
+
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li a {
+    background: #DA1D25;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li:nth-child(1) a {
+    background: #3B579D;
+    padding: 10px 14px;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li:nth-child(2) a {
+    background: #8134AF;
+    padding: 10px 12px;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li:nth-child(3) a {
+    background: #FF7F34;
+    padding: 10px 9px;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li a i {
+    color: white;
+}
+
+.section .row .col-lg-3 .andro_artist-body ul li a i:nth-child(1) {}
+
+/* section team */
